@@ -21,6 +21,12 @@
 *.vrb
 *.xdv
 
+# Generated PDFs (the thesis commitment form under assets/ is a source file)
+/个人简历/template.pdf
+/本科生课程考试试卷/SAMPLE/sample.pdf
+/本科生课程考试试卷/template/template.pdf
+/毕业设计（论文）/template/template.pdf
+
 # Operating system files
 .DS_Store
 Thumbs.db
@@ -31,4 +37,3 @@ tmp/
 .vscode/
 *.swp
 *.swo
-
