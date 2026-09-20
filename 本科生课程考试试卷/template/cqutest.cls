@@ -155,7 +155,7 @@
 \cqut@firstparttrue
 \newcommand{\exampart}[3]{
   \par
-  \ifcqut@firstpart\vspace*{-1mm}\global\cqut@firstpartfalse
+  \ifcqut@firstpart\vspace*{3.9mm}\global\cqut@firstpartfalse
   \else\vspace{2.5mm}\fi
   {\bfseries\fontsize{12pt}{18pt}\selectfont #1、\quad #2 (#3)\par}
   \vspace{1.5mm}
