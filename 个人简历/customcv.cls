@@ -32,7 +32,7 @@
 
 % 自定义高级配色
 \definecolor{color0}{RGB}{33, 37, 41}      % 炭黑：正文主色
-\definecolor{color1}{RGB}{30, 58, 138}     % 石板蓝：章节标题
+\definecolor{color1}{RGB}{0, 0, 0}         % 黑色：标题与章节线
 \definecolor{color2}{RGB}{100, 116, 139}   % 石板灰：日期、地点与副标题
 \definecolor{linkcolor}{RGB}{37, 99, 235}  % 精炼蓝：超链接颜色
 
