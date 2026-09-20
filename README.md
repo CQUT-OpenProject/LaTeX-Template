@@ -1,15 +1,15 @@
-## LaTex Template
+## LaTeX Template
 
 本仓库提供 `本科生课程考试试卷`、`毕业设计（论文）`、`个人简历` 的 LaTeX 模板，可根据具体信息进行修改。
 
-## Why LaTex?
+## Why LaTeX?
 
-1. 相较于 Word，LaTex 在排版上有着更强的能力。使用 LaTex 可以让文档看起来更加专业和美观。
-2. 相较于 Word，AI 工具更擅长处理 LaTex 文档。
+1. 相较于 Word，LaTeX 在排版上有着更强的能力。使用 LaTeX 可以让文档看起来更加专业和美观。
+2. 相较于 Word，AI 工具更擅长处理 LaTeX 文档。
 
-## 安装 LaTex 工具链
+## 安装 LaTeX 工具链
 
-LaTex 的编译产物是 PDF。使用 LaTex 需要安装相应的工具链，例如 BasicTeX、MacTeX 等。若不想安装体积庞大的本地工具，也可以使用 Overleaf 等在线编辑器。
+LaTeX 的编译产物是 PDF。使用 LaTeX 需要安装相应的工具链，例如 BasicTeX、MacTeX 等。若不想安装体积庞大的本地工具，也可以使用 Overleaf 等在线编辑器。
 
 对于 macOS 用户，我推荐使用 [Tectonic](https://github.com/tectonic-typesetting/tectonic)。Tectonic 是一个现代化的、完整的 LaTeX 引擎，由 XeTeX 和  TeXLive 提供支持。本项目的所有工程均基于 Tectonic 构建，对于其它工具链，您可能需要自行处理兼容性问题。
 
