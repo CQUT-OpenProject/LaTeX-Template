@@ -12,7 +12,7 @@
 %%
 %% The Current Maintainer of this work is CQUT-OpenProject.
 %%
-%% This work consists of customcv.cls, template.tex, .latexmkrc,
+%% This work consists of customcv.cls, template.tex,
 %% and assets/watermark-logo.png in this directory.
 
 \NeedsTeXFormat{LaTeX2e}
@@ -85,7 +85,7 @@
 
 % =========================================================================
 % 英文字体设置
-% 衬线体: Tinos Nerd Font | 非衬线体: Arimo Nerd Font | 等宽字体: Cousine Nerd Font
+% 衬线体: Tinos Nerd Font | 非衬线体: Arimo Nerd Font | 等宽字体: JetBrains Mono Nerd Font
 % =========================================================================
 \providecommand*{\customcvfontpath}{}
 

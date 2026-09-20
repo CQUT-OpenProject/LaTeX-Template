@@ -12,7 +12,7 @@
 %%
 %% The Current Maintainer of this work is CQUT-OpenProject.
 %%
-%% This work consists of cqutthesis.cls, template.tex, .latexmkrc,
+%% This work consists of cqutthesis.cls, template.tex,
 %% and assets/ in this directory.
 
 \NeedsTeXFormat{LaTeX2e}
@@ -20,6 +20,7 @@
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexbook}}
 \ProcessOptions\relax
+\PassOptionsToPackage{no-math}{fontspec}
 \LoadClass[a4paper,UTF8,zihao=-4,fontset=none,openany,oneside]{ctexbook}
 
 \RequirePackage{fontspec}

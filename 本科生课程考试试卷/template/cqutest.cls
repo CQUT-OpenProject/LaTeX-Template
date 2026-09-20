@@ -12,8 +12,8 @@
 %%
 %% The Current Maintainer of this work is CQUT-OpenProject.
 %%
-%% This work consists of cqutest.cls, template.tex, .latexmkrc,
-%% assets/watermark-logo.png, and ../SAMPLE/sample.tex with .latexmkrc.
+%% This work consists of cqutest.cls, template.tex,
+%% assets/watermark-logo.png, and ../SAMPLE/sample.tex.
 
 \NeedsTeXFormat{LaTeX2e}
 \makeatletter
