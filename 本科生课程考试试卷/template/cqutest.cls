@@ -17,7 +17,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 \makeatletter
-\ProvidesClass{\@currpath\@currname}[2026/07/16 CQUT exam paper]
+\ProvidesClass{\@currpath\@currname}[2026/07/16 v1.0 CQUT exam paper]
 \makeatother
 
 \newif\ifshowanswers

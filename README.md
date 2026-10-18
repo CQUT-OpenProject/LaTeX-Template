@@ -15,6 +15,6 @@ LaTeX 的编译产物是 PDF。使用 LaTeX 需要安装相应的工具链，例
 
 ## 许可证
 
-本仓库中的 LaTeX 模板文件（`.cls`、`.tex` 及相关资源）遵循 [LaTeX Project Public License (LPPL) 1.3c](https://www.latex-project.org/lppl/) 发布。完整许可文本见仓库根目录的 [`LICENSE`](LICENSE)。受 LPPL 约束的范围包括 `个人简历/`、`本科生课程考试试卷/` 与 `毕业设计（论文）/template/` 下的模板源文件及资源（各 `.cls` 文件头部有具体说明）。
+本仓库中的 LaTeX 模板文件（`.cls`、`.tex` 及相关资源）遵循 [LaTeX Project Public License (LPPL) 1.3c](https://www.latex-project.org/lppl/) 发布。完整许可文本见仓库根目录的 [`LICENSE`](LICENSE)。受 LPPL 约束的范围包括 `个人简历/`、`本科生课程考试试卷/`、`毕业设计（论文）/template/` 与 `通用课程报告/` 下的模板源文件及资源（各 `.cls` / `.sty` 文件头部有具体说明）。
 
 `个人简历/fonts/` 目录下的字体为第三方作品，分别遵循其自带的 OFL、Apache License 等许可证，不属于上述 LPPL Work。

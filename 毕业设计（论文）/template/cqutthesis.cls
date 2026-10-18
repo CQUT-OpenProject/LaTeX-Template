@@ -16,16 +16,16 @@
 %% and assets/ in this directory.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cqutthesis}[2026/07/16 CQUT undergraduate thesis template]
+\ProvidesClass{cqutthesis}[2026/07/16 v1.0 CQUT undergraduate thesis template]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexbook}}
 \ProcessOptions\relax
 \PassOptionsToPackage{no-math}{fontspec}
 \LoadClass[a4paper,UTF8,zihao=-4,fontset=none,openany,oneside]{ctexbook}
 
-\RequirePackage{fontspec}
-\RequirePackage{xeCJK}
-\RequirePackage[a4paper,left=25mm,right=20mm,top=25mm,bottom=25mm,headheight=7mm,headsep=5mm,footskip=10mm]{geometry}
+\RequirePackage[a4paper,left=25mm,right=20mm,top=25mm,bottom=25mm,headheight=7mm,headsep=13mm,footskip=15mm]{geometry}
+\RequirePackage[strict,nobody]{cqutreportfonts}
+\cqutApplyThesisFonts
 \RequirePackage{graphicx}
 \RequirePackage{tikz}
 \RequirePackage{tikzpagenodes}
@@ -45,13 +45,6 @@
 \RequirePackage[absolute,overlay]{textpos}
 \RequirePackage{hyperref}
 
-\setCJKmainfont[BoldFont={Songti SC Bold}]{Songti SC}
-\setCJKsansfont[BoldFont={Heiti SC}]{Heiti SC}
-\setCJKmonofont{Songti SC}
-\newCJKfontfamily\cqutheiti{Hiragino Sans GB W6}
-\newCJKfontfamily\cqutsongti[BoldFont={Songti SC Bold}]{Songti SC}
-\newCJKfontfamily\cqutfangsong{STFangsong}
-\setmainfont{Times New Roman}
 \setmathsfont(Digits,Latin){Times New Roman}
 
 \hypersetup{hidelinks,unicode=true,hypertexnames=false}
@@ -177,9 +170,9 @@
   \fancyhead[L]{\cqut@headerleft}
   \fancyhead[R]{\cqut@headerright}
   \renewcommand{\headrulewidth}{0.4pt}
-  \fancyfoot[C]{\zihao{-5}\thepage}
+  \fancyfoot[C]{\cqutsongti\zihao{-5}\thepage}
 }
-\fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\cqut@headerleft}\fancyhead[R]{\cqut@headerright}\renewcommand{\headrulewidth}{0.4pt}\fancyfoot[C]{\zihao{-5}\thepage}}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\cqut@headerleft}\fancyhead[R]{\cqut@headerright}\renewcommand{\headrulewidth}{0.4pt}\fancyfoot[C]{\cqutsongti\zihao{-5}\thepage}}
 
 % Heading hierarchy follows the supplied school sample.
 \titleformat{\chapter}[block]{\centering\cqutheiti\zihao{3}}{第\thechapter 章\quad}{0pt}{}
@@ -209,7 +202,10 @@
 \setlist[cqutitems,2]{label=（\arabic*）,leftmargin=2em,itemindent=0pt}
 
 \renewcommand{\contentsname}{目\quad 录}
-\titlecontents{chapter}[1em]{\cqutheiti\zihao{-4}}{\contentslabel{1em}}{}{\titlerule*[0.7pc]{.}\contentspage}
+\titlecontents{chapter}[1em]{}
+  {{\fontspec{Times New Roman}\contentslabel{1em}}\cqutheiti\zihao{-4}}
+  {\cqutheiti\zihao{-4}}
+  {\titlerule*[0.7pc]{.}\contentspage}
 \titlecontents{section}[2.75em]{\cqutsongti\zihao{-4}}{\contentslabel{1.75em}}{}{\titlerule*[0.7pc]{.}\contentspage}
 \titlecontents{subsection}[4.6em]{\cqutsongti\zihao{-4}}{\contentslabel{2.6em}}{}{\titlerule*[0.7pc]{.}\contentspage}
 
@@ -241,7 +237,10 @@
 }
 \newcommand{\mainmatterstart}{\clearpage\pagenumbering{arabic}\pagestyle{cqut}}
 \newcommand{\acknowledgements}{\clearpage\chapter*{致\quad 谢}\addcontentsline{toc}{chapter}{致谢}}
-\newcommand{\references}{\clearpage\addcontentsline{toc}{chapter}{参考文献}}
+\newcommand{\references}{%
+  \clearpage
+  \chapter*{参考文献}%
+  \addcontentsline{toc}{chapter}{参考文献}}
 \newcounter{cqutappendix}
 \newcommand{\appendixchapter}[1]{%
   \clearpage

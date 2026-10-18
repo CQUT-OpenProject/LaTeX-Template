@@ -223,3 +223,24 @@
 ---
 
 最后修订日期：2020年 3 月 5 日
+
+---
+
+## LaTeX 模板实现说明（`template/cqutthesis.cls`）
+
+本目录 [`template/`](template/) 下的 LaTeX 模板按上表书写规范实现，并通过 [`cqutreportfonts.sty`](../通用课程报告/cqutreportfonts.sty) 的 **`strict` 选项**加载字体：**不做** STSong / SimSun / Noto / AutoFakeBold 等回退，缺字即由 XeLaTeX 报错，与规范字体名严格一致。
+
+主要对应关系如下：
+
+| 规范条目 | LaTeX 实现 |
+|----------|------------|
+| 正文小 4 宋体、1.5 倍行距 | `zihao=-4` + `\setstretch{1.5}` |
+| 黑体标题 | `\cqutheiti`（Heiti SC） |
+| 宋体正文/页眉 | `\cqutsongti`（Songti SC） |
+| 西文与数字 | Times New Roman |
+| 目录章序号 Times（第九条） | 章编号 `\contentslabel` 使用 Times，标题为黑体小四 |
+| 参考文献标题 3 号黑体（第六条） | `\references` 输出无编号章标题「参考文献」 |
+| 页码小 5 宋体 | 页脚 `\cqutsongti\zihao{-5}` |
+| 封面字段 | `\cqutfangsong`（STFangsong，无则回退宋体） |
+
+**版心**：`geometry` 为左右 25mm / 20mm、上下 25mm，`headsep` 约 13mm、`footskip` 15mm，用于逼近第七条页眉 2.0cm、页脚 1.5cm 的版式；与 Word 默认页边距的换算可能仍有毫米级差异，交稿前请与学院 Word 样张对照。
